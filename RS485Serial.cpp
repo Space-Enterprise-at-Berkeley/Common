@@ -5,7 +5,7 @@
 
 #include "Arduino.h"
 #include "RS485Serial.h"
-#include "../Helpers/Helpers.h"
+#include "Helpers.h"
 
 RS485Serial::RS485Serial(Stream &serial, int ctrlPin)
 :  _serialRef(serial)
