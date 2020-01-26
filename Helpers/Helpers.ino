@@ -1,3 +1,10 @@
+// ~~~~~~~~~~~~~~~~~~ Packet definitions ~~~~~~~~~~~~~~~~~~
+#define startChar '('
+#define endChar ')'
+#define packetTimeoutMillis 500
+// This includes '(', ID and ')'.
+#define packetMaxLength 100
+
 // Convert ID to guaranteed length 2 string. 
 // Return "" if malformed.
 String idToString(int id) {
@@ -9,3 +16,6 @@ String idToString(int id) {
     return "";
   }
 }
+
+// Parse packet. Return "" if malformed.
+String parsePacket(String packet
