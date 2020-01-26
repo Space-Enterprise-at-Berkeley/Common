@@ -16,13 +16,3 @@ String idToString(int id) {
     return "";
   }
 }
-
-// Parse packet. Return "" if malformed.
-String readPacket(Stream &serial, ) {
-
-}
-
-// Read RS485 packet. Return "" if malformed.
-String sendRSPacket(Stream &serial, int {
-
-}
