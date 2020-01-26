@@ -5,7 +5,7 @@
 // This includes '(', ID and ')'.
 #define packetMaxLength 100
 
-// Convert ID to guaranteed length 2 string. 
+// Convert ID to guaranteed length 2 string.
 // Return "" if malformed.
 String idToString(int id) {
   if (id >= 0 && id < 10) {
@@ -19,10 +19,10 @@ String idToString(int id) {
 
 // Parse packet. Return "" if malformed.
 String readPacket(Stream &serial, ) {
-  
+
 }
 
 // Read RS485 packet. Return "" if malformed.
 String sendRSPacket(Stream &serial, int {
-  
+
 }
