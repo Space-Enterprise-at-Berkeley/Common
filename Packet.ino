@@ -1,3 +1,8 @@
+/*
+  Packet.ino - Common packet handling code.
+  Created by Shao-Qian Mah, Jan 25, 2020.
+*/
+
 // Read a packet coming in from internalSerial. 
 // Check that incoming packet matches EXPECTEDID, and it doesn't time out.
 // Return "" (empty string) if exceeds MAXCHARS, including '(' and ')' characters or TIMEOUT (in millis).
