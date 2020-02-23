@@ -16,6 +16,7 @@ String readPacket(int expectedId, long startTime, int charMax, int timeOut) {
     if (INTERNALSERIAL.available() > 0)
     {
       char inChar = INTERNALSERIAL.read();
+      Serial.print(inChar);
       if (charsRcvd >= charMax) {
         return "";
       }
@@ -33,6 +34,7 @@ String readPacket(int expectedId, long startTime, int charMax, int timeOut) {
       if (charsRcvd == 3) {
         int id = packet.substring(1).toInt();
         if (id != expectedId) {
+          Serial.println("Invalid packet received");
           return "";
         }
       }
@@ -42,5 +44,7 @@ String readPacket(int expectedId, long startTime, int charMax, int timeOut) {
       }
     }
   }
+  Serial.println("");
+  Serial.println("Timeout");
   return "";
 }
